@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet Management App</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background: white;
+            display:flex;
+            min-height: 100vh;
+        }
+        .Login page{
+            background: white;
+            padding: 40px;
+            border: 2px solid #ddd;
+            width:100%;
+            max-width: 400px; 
+        }
+        .Login page h2{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .Form-group{
+            margin-bottom: 20px;
+        }
+        .Form-group label{
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-weight: 500;
+        }
+        .Form-group input{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            font-size: 14px;;
+        }
+        .Form-group input:focus{
+            outline: none;
+            border-color: #333;
+        }
+        .Login-btn{
+            width: 70%;
+            padding:9px;
+            background: #333;
+            color: white;
+            border: none;
+            font-size: 10px;
+            cursor: pointer;
+        }
+        .login-btn:hover{
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class ="Login page">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class ="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password"  required>
+            </div>
+            <button type="submit" class="Login-btn">Login</button>
+        </form>
+    </div>
+    <script>
+            document.getElementById('loginForm').addEventListener("submit", function(e){
+                e.preventDefault();const email= document.getElementById("email").value;
+                document.getElementById("password").value;
+
+                if(email==="admin@gmail.com" && "password"===admin1234){
+                    alert("Login Success");
+                    window.location.href="admin.html";
+                }
+                else{
+                    alert("Wrong email or password");
+                }
+            });
+        </script>
+</body>
+</html>
